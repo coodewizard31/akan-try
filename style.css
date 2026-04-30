@@ -5,6 +5,10 @@
 body {
     background-color: #F4A261;
     font-family: Cambria;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    display: flex;
 }
 .container {
     background-color: #FDF4E3;
