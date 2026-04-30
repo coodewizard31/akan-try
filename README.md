@@ -7,7 +7,9 @@ This project is a web-based application that determines a user’s "soul name" b
 
 ### Objectives
 1.Identify a user's day of birth using computational logic.
+
 2.Educate users on the specific meaning and gender-based variations of Akan names.
+
 3.Preserve traditional naming practices through an accessible, modern interface. 
 
 ## Author(s) information
