@@ -24,6 +24,11 @@ body {
     flex-direction: column;
     gap: 9px;
 }
+/* label */
+label {
+    text-align: left;
+    display: block;
+}
 /* making inputs & button same width */
 input[type="date"],button {
     width:100%;
@@ -37,6 +42,7 @@ input[type="date"],button {
     display: flex;
     justify-content: space-between;
     gap: 18px;
+    margin-bottom: 27px;
 }
 /* male & female will feel like equal boxes */
 .radio-group label {
@@ -48,6 +54,7 @@ input[type="date"],button {
     cursor: pointer;
     transition: all 0.3s ease;
     background: rgba(225,248,239,0.6);
+
 }
 /* breath life to the selection */
 .radio-group label:hover {
