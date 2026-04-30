@@ -26,9 +26,12 @@ Role: Junior developer
 4.Open the files in any modern day web browser.
 
 ## BDD (Behavior-Driven Development)
-Feature   	    Input	              Output
+Feature   	     Input	              Output
+
 Valid Date	    30-04-2026, Male	  "Your Akan name is Yaw"
+
 Empty Input 	  None	              Error: "please select both date & gender"
+
 Gender Selection	Female	        Returns Female-specific Akan names
 
 ## Technologies used
