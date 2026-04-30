@@ -2,6 +2,9 @@
 * {
     box-sizing: border-box;
 }
+header {
+    font-weight: 400;
+}
 body {
     background-color: #F4A261;
     font-family: Cambria;
@@ -10,6 +13,7 @@ body {
     min-height: 100vh;
     display: flex;
 }
+
 .container {
     background-color: #FDF4E3;
     padding: 36px;
@@ -19,6 +23,9 @@ body {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 
+}
+.container img {
+    border-radius: 9px;
 }
 .container:hover {
     transform: translateY(-5px);
