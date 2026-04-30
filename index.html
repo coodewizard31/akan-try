@@ -1,57 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Akan Name Generator</title>
-    <!-- linking this to css -->
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akan-Name-Generator</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
     <div class="container">
-      <!-- title & Description -->
-      <header>
-        <h1>Akan Name Generator</h1>
-        <img src="african.jpg" alt="arican image">
-        <p>Find your name based on the day you were born</p>
-      </header>
-      <!-- form section below -->
-      <section class="form-section">
-        <form id="akanForm">
-          <!-- Birthdate Input -->
-          <div class="form-group">
-            <label for="birthdate">Enter your birthdate:</label>
-            <input type="date" id="birthdate" name="birhdate" required />
-          </div><br>
-          <!-- Gender selection -->
-          <!-- inside another container -->
-          <div class="form-group">
-            <label>Select your gender:</label>
-            <!-- container for input -->
-            <div class="radio-group">
-              <label>
-                <input type="radio" name="gender" value="male"/>Male
-              </label>
+        <!-- title & Description -->
+        <header>
+            <h1>Akan Name Generator</h1>
+            <img src="african.jpg" alt="arican image">
+            <p>Find your name based on the day you were born</p>
+        </header>
+        <!-- form section below -->
+        <section class="form-section">
+            <form id="akanForm">
+                <!-- Birthdate Input -->
+                <div class="form-group">
+                    <label for="birthdate">Enter your birthdate:</label>
+                    <input type="date" id="birthdate" name="birhdate" required />
+                </div><br>
+                <!-- Gender selection -->
+                <!-- inside another container -->
+                <div class="form-group">
+                    <label>Select your gender:</label>
+                    <!-- container for input -->
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="gender" value="male">Male
+                        </label>
 
-              <label
-                ><input
-                  type="radio"
-                  name="gender"
-                  value="female"
-                />Female</label
-              >
-            </div>
-          </div>
-          <!-- submit name button by click -->
-          <button type="button" class="savannah-btn" onclick="getAkanName()">Get Akan Name</button>
-        </form>
-        <!-- result section -->
-        <section class="result-section">
-          <h2>Your Akan Name</h2>
-          <p id="result">Your name will appear here</p>
-        </section>
-      </section>
+                        <label> <input type="radio" name="gender" value="female"> female</label>
+                    </div>
+                </div>
+                <!-- submit name button by click -->
+                <button type="button" class="savannah-btn" onclick="getAkanName()">Get Akan Name</button>
+            </form>
+            <!-- result container-->
+            <div id="result"></div>
     </div>
     <script src="script.js" defer></script>
-  </body>
+</body>
+
+    
+
 </html>
+    
+

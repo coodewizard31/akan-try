@@ -27,7 +27,7 @@ let index = Math.floor(Math.abs(dayOfWeek));
 let maleNames = ["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 let femaleNames = ["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 let akanName = "";
-if (gender.value === "Male") {
+if (gender.value === "male") {
     akanName = maleNames[index];
 
 } else {

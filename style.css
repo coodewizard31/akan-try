@@ -1,121 +1,165 @@
 /* everything in my styling will look so equal */
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 header {
-    font-weight: 400;
+  font-weight: 400;
 }
 body {
-    background-color: #F4A261;
-    font-family: Cambria;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    display: flex;
+  background-color: #f4a261;
+  font-family: Cambria;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  display: flex;
 }
-
+/* texts inside container */
+.container h1,
+.container p,
+.container label {
+  color: #2c1810;
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+/* special effects on the background of the container */
 .container {
-    background-color: #FDF4E3;
-    padding: 36px;
-    max-width: 540px;
-    border-radius: 12px;
-    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-
+  background: linear-gradient(135deg, #8b4513, #d2691e, #f4a460);
+  padding: 30px;
+  max-width: 540px;
+  border-radius: 20px;
+  box-shadow: 0 9px 18px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .container img {
-    border-radius: 9px;
+  border-radius: 9px;
 }
 .container:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 12px 24px rgba(0,0,0,0.3);
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
 }
- h1 {
-    color: #264653;
+h1 {
+  color: #264653;
 }
 .form-section {
-    /* flexing colums to the right */
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+  /* flexing colums to the right */
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 /* label */
 label {
-    text-align: left;
-    display: block;
+  text-align: left;
+  display: block;
 }
 /* making inputs & button same width */
-input[type="date"],button {
-    width:100%;
-    padding:12px;
-    border-radius: 9px;
-    border: 1px solid #ccc;
-    font-size: 15px;
+input[type="date"],
+button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 9px;
+  border: 1px solid #ccc;
+  font-size: 15px;
 }
 /* gender selection alignment */
 .radio-group {
-    display: flex;
-    justify-content: space-between;
-    gap: 18px;
-    margin-bottom: 27px;
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  margin-bottom: 27px;
 }
 /* male & female will feel like equal boxes */
 .radio-group label {
-    flex: 1;
-    padding: 12px;
-    border: 1px solid #91887a;
-    border-radius: 9px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    background: rgba(225,248,239,0.6);
-
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #91887a;
+  border-radius: 9px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: rgba(225, 248, 239, 0.6);
 }
 /* breath life to the selection */
 .radio-group label:hover {
-    animation: breath3 0.9s ease-in-out 3;
-    background: rgba(212,132,90,0.15);
-    border-color:#D4845A;
-    transform:scale(1.02);
+  animation: breath3 0.9s ease-in-out 3;
+  background: rgba(212, 132, 90, 0.15);
+  border-color: #d4845a;
+  transform: scale(1.02);
 }
 @keyframes breath3 {
-    0% {box-shadow: 0,0,0,0 rgba(212,132,90,0.3);border-color: #91887a;}
-    50% {box-shadow: 0,0,0 6px rgba(212,132,90,0.1) #D4845A;}
-    100% {box-shadow: 0,0,0,0 rgba(212,132,90,0);border-color: #91887a;}
-
+  0% {
+    box-shadow:
+      0,
+      0,
+      0,
+      0 rgba(212, 132, 90, 0.3);
+    border-color: #91887a;
+  }
+  50% {
+    box-shadow:
+      0,
+      0,
+      0 6px rgba(212, 132, 90, 0.1) #d4845a;
+  }
+  100% {
+    box-shadow:
+      0,
+      0,
+      0,
+      0 rgba(212, 132, 90, 0);
+    border-color: #91887a;
+  }
 }
 /* selected/checked state */
 .radio-group label:has(input:checked) {
-    background: #d4845a;
-    color: white;
-    border-color: #9e4a2a;
+  background: #d4845a;
+  color: white;
+  border-color: #9e4a2a;
 }
 /* radio-group input */
 .radio-group input {
-    display: none;
+  display: none;
 }
 /* Base btn creation */
 .savannah-btn {
-    background: #D4845A;
-    color: #fff8ef;
-    border: none;
-    padding: 14px 32px;
-    font-size: 1.1rem;
-    font-weight: 600;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s cubic-bezier(0.2,0.9.0.4.1.1);
+  background: #d4845a;
+  color: #fff8ef;
+  border: none;
+  padding: 14px 32px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.2, 0.9.0.4.1.1);
 }
 /* 3 gentle pulses */
 .savannah-btn:hover {
-    animation: pulse3 0.9s ease-in-out 3;
-    background: #b55b3a;
-    transform: scale(1.02);
+  animation: pulse3 0.9s ease-in-out 3;
+  background: #b55b3a;
+  transform: scale(1.02);
 }
 /* steps of animation to make the button characteristic */
 @keyframes pulse3 {
-    0% {box-shadow: 0,0,0,0 rgba(212,132,90,0.4);}
-    50% {box-shadow: 0,0,0,12px rgba(212,132,90,0);}
-    100% {box-shadow: 0,0,0,0 rgba(212,132,90,0);}
+  0% {
+    box-shadow:
+      0,
+      0,
+      0,
+      0 rgba(212, 132, 90, 0.4);
+  }
+  50% {
+    box-shadow:
+      0,
+      0,
+      0,
+      12px rgba(212, 132, 90, 0);
+  }
+  100% {
+    box-shadow:
+      0,
+      0,
+      0,
+      0 rgba(212, 132, 90, 0);
+  }
 }

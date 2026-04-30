@@ -23,9 +23,8 @@ Role: Junior developer
 
 ## BDD (Behavior-Driven Development)
 Feature   	    Input	              Output
-Valid Date	    30-04-2023, Male	  "Your Akan name is Akosua"
-Invalid Date	 40-15-2025        Error: "Please select both date & gender
-Empty Input 	  None	              Error: "Fields cannot be empty"
+Valid Date	    30-04-2026, Male	  "Your Akan name is Yaw"
+Empty Input 	  None	              Error: "please select both date & gender"
 Gender Selection	Female	        Returns Female-specific Akan names
 
 ## Technologies used
