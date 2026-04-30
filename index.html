@@ -1,51 +1,55 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Akan Name Generator</title>
     <!-- linking this to css -->
-     <link rel="stylesheet" href="./style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
     <div class="container">
-        <!-- title & Description -->
-         <header>
-            <h1>Akan Name Generator</h1>
-            <p>Find your name based on the day you were born</p>
-         </header>
-         <!-- form section below -->
-          <section class="form-section">
-            <form id="akanForm">
-                <!-- Birthdate Input -->
-                 <div class="form-group">
-                    <label for="birthdate">Enter your birthdate:</label>
-                    <input type="date" id="birthdate" name="birhdate" required>
+      <!-- title & Description -->
+      <header>
+        <h1>Akan Name Generator</h1>
+        <p>Find your name based on the day you were born</p>
+      </header>
+      <!-- form section below -->
+      <section class="form-section">
+        <form id="akanForm">
+          <!-- Birthdate Input -->
+          <div class="form-group">
+            <label for="birthdate">Enter your birthdate:</label>
+            <input type="date" id="birthdate" name="birhdate" required />
+          </div>
+          <!-- Gender selection -->
+          <!-- inside another container -->
+          <div class="form-group">
+            <label>Select your gender:</label>
+            <!-- container for input -->
+            <div class="radio-group">
+              <label>
+                <input type="radio" name="gender" value="male" required />Male
+              </label>
 
-                 </div>
-                 <!-- Gender selection -->
-                  <!-- inside another container -->
-                   <div class="form-group">
-                    <label >Select your gender:</label>
-                    <!-- container for input -->
-                    <div class="radio-group">
-                        <label>
-                            <input type="radio" name="gender" value="male" required>Male
-                        </label>
-                    
-                        <label ><input type="radio" name="gender" value="female">Female</label>
-
-
-                    </div>
-
-                   </div>
-                   <!-- submit name button by click -->
-            </form>
-
-          </section>
-
+              <label
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="female"
+                />Female</label
+              >
+            </div>
+          </div>
+          <!-- submit name button by click -->
+          <button type="submit">Get Akan Name</button>
+        </form>
+        <!-- result section -->
+        <section class="result-section">
+          <h2>Your Akan Name</h2>
+          <p id="result">Your name will appear here</p>
+        </section>
+      </section>
     </div>
-
-    
-</body>
+  </body>
 </html>
