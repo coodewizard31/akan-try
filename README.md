@@ -1,5 +1,5 @@
 ## Akan-name-generator
-view live link:
+view live link:coodewizard31.github.io/akan-try/
 
 ## Akan Name Generator : Description
 This project is a web-based application that determines a user’s "soul name" based on the Akan tradition of Ghana.
