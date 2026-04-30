@@ -46,6 +46,7 @@ input[type="date"],button {
     border-radius: 9px;
     text-align: center;
     cursor: pointer;
+    transition: ;
 }
 /* Base btn creation */
 .savannah-btn {
@@ -61,5 +62,13 @@ input[type="date"],button {
 }
 /* 3 gentle pulses */
 .savannah-btn:hover {
-    animation: pulse3 0.9s;
+    animation: pulse3 0.9s ease-in-out 3;
+    background: #b55b3a;
+    transform: scale(1.02);
+}
+/* steps of animation to make the button characteristic */
+@keyframes pulse3 {
+    0% {box-shadow: 0,0,0,0 rgba(212,132,90,0.4);}
+    50% {box-shadow: 0,0,0,12px rgba(212,132,90,0);}
+    100% {box-shadow: 0,0,0,0 rgba(212,132,90,0);}
 }
