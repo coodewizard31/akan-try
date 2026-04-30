@@ -14,3 +14,17 @@ body {
  h1 {
     color: #264653;
 }
+.form-section {
+    /* flexing colums to the right */
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+}
+/* making inputs & button same width */
+input[type="date"],button {
+    width:100%;
+    padding:12px;
+    border-radius: 9px;
+    border: 1px solid #ccc;
+    font-size: 15px;
+}
