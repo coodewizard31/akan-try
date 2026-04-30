@@ -14,7 +14,9 @@ This project is a web-based application that determines a user’s "soul name" b
 
 ## Author(s) information
 Author:Frank Mwaura
+
 GitHub: https://github.com/coodewizard31
+
 Role: Junior developer
 
 ## Setup Instructions
