@@ -2,3 +2,15 @@ body {
     background-color: #F4A261;
     font-family: Cambria;
 }
+.container {
+    background-color: #FAEDCD;
+    padding: 36px;
+    max-width: 540px;
+    border-radius: 12px;
+    box-shadow: 0 9px 18px rgba(0,0,0,0.2);
+    text-align: center;
+
+}
+ h1 {
+    color: #264653;
+}
